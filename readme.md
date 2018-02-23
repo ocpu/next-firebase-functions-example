@@ -56,11 +56,11 @@ const store = configureStore()
  * 
  * @example
  * // Without redux
- * <Component page={props => <div>Hello, world!</div>}/>
+ * <Page page={props => <div>Hello, world!</div>}/>
  * 
  * @example
  * // With redux
- * <Component
+ * <Page
  *   redux={{
  *     state: state => ({}),
  *     dispatch: dispatch => ({})
