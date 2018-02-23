@@ -109,7 +109,7 @@ import * as reducers from './reducers'
 export const configureStore = (initialState={}) => {
   const composeEnhancers = typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
-  const store = createStore(combineReducers(reducer), initailState, composeEnhancers(
+  const store = createStore(combineReducers(reducers), initialState, composeEnhancers(
     applyMiddleware(thunk)
   ))
 
