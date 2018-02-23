@@ -49,6 +49,8 @@ Files:
 import { configureStore } from '../data/store'
 import { Provider, connect } from 'react-redux'
 
+const store = configureStore()
+
 /**
  * Display a element and optionaly connected to the redux store.
  * 
@@ -76,7 +78,7 @@ import { Provider, connect } from 'react-redux'
 export const Page = props => {
   const { page: Page, redux, children, ...rest } = props
   return redux && redux.state && redux.dispatch ? (
-    <Provider>
+    <Provider store={store}>
       {(() => {
         const Page = connect(redux.state, redux.dispatch)(Page)
         return <Page {...rest}>{children}</Page>
