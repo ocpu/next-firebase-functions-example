@@ -102,7 +102,7 @@ export const Layout = props => {
 <details><summary><code>functions/app/data/store.js</code></summary>
 
 ```js
-import { combineReducers, createStore, applyMiddleware, combine } from 'redux'
+import { combineReducers, createStore, applyMiddleware, compose } from 'redux'
 import thunk from 'redux-thunk'
 import * as reducers from './reducers'
 
