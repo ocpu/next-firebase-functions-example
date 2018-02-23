@@ -3,7 +3,7 @@
 This is a example on how to setup Next.js with Firebase Cloud Functions and Hosting.
 
 ```
-git clone https://github.com/ocpu/firebase-functions-next-example my-project
+git clone https://github.com/ocpu/next-firebase-functions-example.git my-project
 cd my-project
 npm install
 ```
