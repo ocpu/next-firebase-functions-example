@@ -20,7 +20,7 @@ const app = next({
     existsSync(joinPath(__dirname, 'app', 'next.config.js')) ?
       require('./app/next.config') :
       {},
-    { distDir: 'dist' }
+    { distDir: '../.next' }
   )
 })
 
